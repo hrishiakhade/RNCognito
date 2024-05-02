@@ -77,6 +77,7 @@ const LoginScreen = ({ navigation }) => {
             <TextInput
                 style={styles.input}
                 placeholder="Username"
+                placeholderTextColor={'gray'}
                 value={username}
                 onChangeText={setUsername}
             />
@@ -85,6 +86,7 @@ const LoginScreen = ({ navigation }) => {
                 placeholder="Password"
                 secureTextEntry
                 value={password}
+                placeholderTextColor={'gray'}
                 onChangeText={setPassword}
             />
             <TouchableOpacity onPress={() => navigation.navigate('Signup')} style={{ marginBottom: 10 }}>
@@ -113,6 +115,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         marginBottom: 12,
         paddingHorizontal: 10,
+        color: 'black',
     },
 });
 

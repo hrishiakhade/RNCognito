@@ -62,6 +62,7 @@ const SignupScreen = ({ navigation }) => {
                 placeholder="Username"
                 value={username}
                 onChangeText={setUsername}
+                placeholderTextColor={'gray'}
                 style={styles.input}
             />
             <TextInput
@@ -69,18 +70,21 @@ const SignupScreen = ({ navigation }) => {
                 secureTextEntry
                 value={password}
                 onChangeText={setPassword}
+                placeholderTextColor={'gray'}
                 style={styles.input}
             />
             <TextInput
                 placeholder="Email"
                 value={email}
                 onChangeText={setEmail}
+                placeholderTextColor={'gray'}
                 style={styles.input}
             />
             <TextInput
                 placeholder="Phone Number"
                 value={phoneNumber}
                 onChangeText={setPhoneNumber}
+                placeholderTextColor={'gray'}
                 style={styles.input}
             />
             <Button
@@ -102,6 +106,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         marginBottom: 12,
         paddingHorizontal: 10,
+        color: 'black',
     },
     container: {
         flex: 1,

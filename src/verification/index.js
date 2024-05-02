@@ -63,6 +63,7 @@ const VerificationScreen = ({ route, navigation }) => {
                         ref={(input) => (ref.current[index] = input)}
                         style={styles.textInput}
                         keyboardType="numeric"
+                        placeholderTextColor={'gray'}
                         maxLength={1}
                         onChangeText={(text) => handleInputChange(text, index)}
                     />
@@ -102,6 +103,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         textAlign: 'center',
         marginHorizontal: 5,
+        color: 'black',
     },
 });
 
